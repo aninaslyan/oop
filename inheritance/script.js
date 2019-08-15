@@ -13,7 +13,7 @@ function Developer(releases, name, age, salary) {
     this.releases = releases;
 }
 
-Developer.prototype = Object.create(Employee.prototype); // create a new object with Employee prototypes inside Developer prototype
+Developer.prototype = Object.create(Employee.prototype); // create a new object with Employee prototypes inside Developer prototype. Note: Anything that was inside Developer.prototype will be removed
 Developer.prototype.constructor = Developer; // assign Developer constructor to itself
 
 let d1 = new Developer(5, 'Anna', 25, 25000);

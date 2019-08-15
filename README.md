@@ -1,3 +1,4 @@
 # oop
 
 - inheritance
+- polymorphism
