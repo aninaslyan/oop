@@ -12,5 +12,16 @@ function Employee() {
 
 let e1 = new Employee();
 console.log(e1);
-e1.setSalary(100000);
-console.log(e1.getSalary());
+
+function Developer(releases) {
+    Employee.call(this);
+    this.releases = releases;
+}
+
+Developer.prototype = Object.create(Employee.prototype);
+Developer.constructor = Developer;
+
+let d1 = new Developer(1);
+console.log(d1);
+e1.setSalary(10000);
+d1.getSalary();
