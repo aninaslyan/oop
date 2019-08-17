@@ -1,12 +1,12 @@
 function Employee() {
-    let salary;
+    let _salary;
 
     this.getSalary = function () {
-        return salary;
+        return _salary;
     };
 
     this.setSalary = function (s) {
-        salary = s;
+        _salary = s;
     };
 }
 
