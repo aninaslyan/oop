@@ -1,18 +1,7 @@
 function Employee() {
-    // this._salary;
-
-    // this.getSalary = function () {
-    //     return _salary;
-    // };
-    //
-    // this.setSalary = function (s) {
-    //     _salary = s;
-    // };
-
-    // if we really wanna create a private (protected) class member
     let _salary;
 
-    Object.defineProperty(this, '_salary', {
+    Object.defineProperty(this, '_salary', { // getter setter functions
         get: function () {
             return _salary;
         },
@@ -24,9 +13,11 @@ function Employee() {
         }
     });
 }
-
+// after storing property value directly getter setter work from Object.defineProperty
 let e1 = new Employee();
-console.log(e1);
+let e2 = new Employee();
+console.log(e1); // is different for each instance
+console.log(e2);
 
 function Developer(releases) {
     Employee.call(this);
