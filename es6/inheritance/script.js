@@ -9,9 +9,9 @@ class Employee {
     }
 }
 
-class Developer extends Employee {
+class Developer extends Employee { // inherit Employee's prototype
     constructor( releases, name, age, salary) {
-        super(name, age, salary); // inherit Employee's constructor and prototypes
+        super(name, age, salary); // inherit (call) Employee's constructor
         // cannot access this until super has been called: Error
         this.releases = releases; // you can use here countBonuses method from here by super.countBonuses()
     }
