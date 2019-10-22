@@ -1,7 +1,7 @@
 function Employee() {
-    let _salary;
+    let _salary = 0;
 
-    Object.defineProperty(this, '_salary', { // getter setter functions
+    Object.defineProperty(this, '_salary', { // getter setter functions in defineProperty (works better than usual getter setter functions)
         get: function () {
             return _salary;
         },
@@ -13,6 +13,7 @@ function Employee() {
         }
     });
 }
+
 // after storing property value directly getter setter work from Object.defineProperty
 let e1 = new Employee();
 let e2 = new Employee();

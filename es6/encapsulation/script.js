@@ -1,12 +1,12 @@
 class Employee {
-    _salary = 0; // rather protected (_) than private (#)
+    _salary = 0; // private (# this sign will replace private members in the future)
 
     getSalary() {
         return this._salary;
     }
 
     setSalary(s) {
-        if(typeof s !== 'number') {
+        if (typeof s !== 'number') {
             throw new Error("The value must be a number");
         }
         this._salary = s;
