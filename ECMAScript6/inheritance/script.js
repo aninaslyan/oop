@@ -18,6 +18,6 @@ class Developer extends Employee { // inherit Employee's prototype
 }
 
 let d1 = new Developer(5, 'Anna', 25, 25000);
-// calling child, paren't constructor function is being called automatically (if there is no: default), then child's (in pre es6 this don't happen)
+// calling child, paren't constructor function is being called automatically (if there is no: default), then child's (in pre ECMAScript6 this don't happen)
 // can't be called without new: Error
 console.log(d1);

@@ -16,6 +16,7 @@ function Developer(releases, name, age, salary) {
 Developer.prototype = Object.create(Employee.prototype);
 Developer.prototype.constructor = Developer;
 
+// in js only Static polymorphism exists
 Developer.prototype.countBonuses = function () { // this method has the same name as it's in Employee prototype
     this.salary = this.salary * 2;
 };
