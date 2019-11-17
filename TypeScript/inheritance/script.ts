@@ -1,7 +1,7 @@
 import { IEmployee, IDeveloper } from '../types';
 
 class Employee implements IEmployee {
-    name: string;
+    public name: string;  // public keyword can be skipped, it's the default access modifier
     age: number;
     salary: number;
 
@@ -18,6 +18,7 @@ class Employee implements IEmployee {
 
 class Developer extends Employee implements IEmployee, IDeveloper {
     releases: number;
+
     constructor(releases: number, name: string, age: number, salary: number) {
         super(name, age, salary); // arguments can't be send by spread operator, compiler doesn't recognise the types
         this.releases = releases;
