@@ -1,6 +1,6 @@
 import { IEmployee, IDeveloper } from '../types';
 
-abstract class Employee implements IEmployee { //
+abstract class Employee implements IEmployee { // can't create instances
     protected constructor(public name: string, public age: number, public salary: number) { // abstract constructor can be made protected
         this.name = name;
         this.age = age;
@@ -20,7 +20,7 @@ class Developer extends Employee implements IEmployee, IDeveloper {
     }
 
     bonus = 2; // must implement bonus
-    // must implement countBonuses
+    // must implement countSalary
     countSalary(): number {
         return this.salary * this.bonus;
     }
