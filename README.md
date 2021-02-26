@@ -1,6 +1,6 @@
 # oop
 
-#### JavaScript implementation of OOP concepts
+#### JavaScript and TypeScript implementation of OOP concepts
 
 - abstraction
 - inheritance
