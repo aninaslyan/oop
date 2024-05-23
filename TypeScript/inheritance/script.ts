@@ -16,11 +16,13 @@ class Employee implements IEmployee {
     }
 }
 
+// derived class Developer that extends the base class Employee
 class Developer extends Employee implements IEmployee, IDeveloper {
     releases: number;
 
     constructor(releases: number, name: string, age: number, salary: number) {
-        super(name, age, salary); // arguments can't be send by spread operator, compiler doesn't recognise the types
+        // calling the constructor of the parent class
+        super(name, age, salary); // arguments can't be sent by spread operator, compiler doesn't recognise the types
         this.releases = releases;
     }
 }

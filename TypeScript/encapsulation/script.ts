@@ -1,5 +1,9 @@
 class Employee {
-    // the shorten way of initializing variables in constructor
+    // the shorten way of declaring and initializing variables with passed values in constructor
+    // public: accessible from anywhere
+    // readonly: can only be assigned during declaration or in constructor
+    // private: accessible only within the class
+    // protected: accessible within the class and its subclasses
     constructor(public name: string, public readonly age: number, private salary: number, protected gender: string) {
     }
 

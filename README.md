@@ -4,7 +4,7 @@
 
 - **Abstraction** - A process of hiding the implementation details and showing only the functionality to the users.
 - **Inheritance** - The mechanism by which one class is allowed to inherit the features (properties and methods) of another class.
-- **Polymorphism** - The ability of a function to behave differently based on the input. Polymorphism means many forms. There are two types of polymorphism in JavaScript: static (overloading) and dynamic (overriding).
+- **Polymorphism** - The ability of a function to behave differently based on the input. Polymorphism means many forms. There are two types of polymorphism in JavaScript: static (method overloading) and dynamic (method overriding).
 - **Encapsulation** - Allows controlling access to the object. It is a way to restrict access to some of an object's components outside the unit.
 
 #### The Structure
